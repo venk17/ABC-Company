@@ -3,7 +3,7 @@ import axios from 'axios';
 // Create axios instance with base configuration
 const api = axios.create({
   baseURL: process.env.NODE_ENV === 'production' 
-    ? 'https://your-backend-domain.com/api' 
+    ? 'https://abc-company-gy7l.onrender.com/api' 
     : 'http://localhost:5000/api',
   timeout: 10000,
   headers: {
