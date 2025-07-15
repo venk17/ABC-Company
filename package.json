@@ -1,0 +1,19 @@
+{
+  "name": "abc-company-website",
+  "version": "1.0.0",
+  "description": "ABC Company Website with CMS - Full Stack Application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-deps": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["react", "nodejs", "mongodb", "cms", "fullstack"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
